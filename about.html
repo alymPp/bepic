@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мы семья врачей!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мы семья врачей!</title>
+  <meta name="description" content="Семейная пара врачей высшей категории делится своим опытом применения продуктов B-epic. Elev8 - клеточное питание XXI века для здоровья и энергии.">
+  <meta name="keywords" content="B-epic, Elev8, Мурадил Бабаев здоровье, Айнагуль Тороева врачи, семья, похудение, диабет, иммунитет">
+  
+  <meta property="og:title" content="Мы семья врачей!">
+  <meta property="og:description" content="Семейная пара врачей высшей категории делится своим опытом применения продуктов B-epic. Elev8 - клеточное питание XXI века для здоровья и энергии.">
+  <meta property="og:image" content="./ImagesB/мурадил-elev8.webp"> <meta property="og:url" content="https://muradilelev8.com/index.html"> <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/elev8.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <script src="JavaScript/header.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header__wrapper">
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+      <div class="header__logo">
+        <a class="active-link" aria-current="page" href="index.html">
+          <img class="logo" loading="lazy" src="./ImagesB/Logo.svg" alt="logo">
+        </a>
+      </div>
+      <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9">
+          <path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
+        </svg>
+      </button>
+      <nav id="navbar">
+        <ul class="nav-links">
+          <li>
+            <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"/></svg>
+            </button>
+          </li>
+          <li><a href="./index.html">Главная</a></li>
+          <li><a href="./index.html">Результаты</a></li>
+          <li><a href="./about.html">О нас</a></li>              
+          <li>
+            <button class="header__nav-button">
+              <img class="phone_icon" loading="lazy" src="./ImagesB/icons8-phone-50.svg" alt="">&nbsp;Связаться
+            </button>
+          </li>
+        </ul>
+      </nav>
+      </div>
+      <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+    </div>
+  </header>
+  <style>
+    .about{
+      padding: 20px 0;
+    }
+    .services_title p{
+      text-align: center;
+      font-size: 14px;
+    }
+    .services_title h2{
+      font-size: 48px;
+      font-weight: 400;
+    }
+    .img-card img{
+      max-width: 430px;
+      border-radius: 14px;
+    }
+    .about_wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 0px;
+    }
+    .about-text{
+     margin-top: 10px;
+     max-width: 500px;
+     display: flex;
+     flex-direction: column;
+     gap: 1.5rem;
+     line-height: 24px;
+    }
+    .about-text h1 {
+      font-size: 40px;
+      line-height: 2.4rem;
+    }
+    .about-text h2 {
+      margin-bottom: 10px;
+      text-align: center;
+      display: flex;
+    }
+
+    .about-text h2 img {
+      margin-right: 10px;
+    }
+    
+    .story{
+      gap: 1rem;
+    }
+    .result{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contact-btn{
+      padding: 15px 15px;
+      border: 1px;
+      width: fit-content;
+      color: var(--green);
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 50px;
+      background-color: #0e1f12 ;
+      border-color: var(--green);
+      border-style: solid;
+      border-width:  1px;
+      transition:  0.3s;
+    }
+
+    .contact-btn:hover {
+      transform: scale(1.05);
+    }
+    
+
+    @media(max-width: 978px) {
+    .about-text h1 {
+    font-size: 34px;
+    line-height: 2.5rem;
+    }
+    .about-text p {
+      font-size: 18px;
+      line-height: 2rem;
+    }
+    .img-card img{
+      max-width: 350px;
+    }
+  }
+  @media screen and (max-width: 769px){
+    .about{
+      padding: 20px;
+    }
+    .container {
+    padding: 0 0rem !important;
+    }
+    .about_wrapper{
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px 0px;
+    }
+    .img-card img{
+      max-width: 100%;
+    }
+    .img-card{
+      flex-grow: 1;
+    }
+    .about-text{
+      max-width: 768px;
+      gap: 5px;
+      margin-bottom: 1rem;
+
+    }
+    .about-text h1 {
+    font-size: 34px;
+    line-height: 2.5rem;
+    }
+    .benefits_list {
+      line-height: 1.5rem !important;
+      font-size: 1rem;
+    }
+    }
+    @media screen and (max-width: 379px){
+      .about-text p{
+        font-size: 14px;
+        line-height: 1.7;
+      }
+    
+    }
+  </style>
+  <section  class="about" id="about">
+    <div class="services_title">
+      <h2 class="section-title"> Наша история</h2> 
+      <p>Вы можете доверяться Нам</p>
+  </div>
+  <div class="container">
+    <div class="about_wrapper">
+        <div class="img-card">
+          <img src="ImagesB/мурадил-elev8.webp" alt="мурадил elev8">
+        </div>
+        <div class="about-text">
+          <h1>Мы семья врачей! </h1>
+          <p>Мы, Мурадил Бабаев и Айнагуль Тороева, семейная пара врачей высшей категории (Мурадил - врач-реаниматолог-анестезиолог, Айнагуль - врач-терапевт) и Голубые Бриллианты компании B-epic.
+            Наш многолетний опыт в медицине и личный опыт применения продуктов B-epic позволил нам убедиться в их высокой эффективности.
+          </p>
+           <a href="https://wa.link/xy86n0" target="_blank"><button class="contact-btn"> Связаться с нами </button></a>      
+        </div>
+    </div>  
+    <div class="about_wrapper">
+      <div class="about-text story">
+        <h2><img src="./ImagesB/section-shape.webp" class="main" loading="lazy" alt="">Наш путь</h2>
+        <p>Работая в государственной и частной медицине, мы столкнулись с проблемой низких зарплат, что вынудило нас работать на нескольких работах одновременно.  Напряженный график, ночные дежурства, хроническое недосыпание и физическое перенапряжение привели к серьезным проблемам со здоровьем:</p>
+        <ul class="benefits_list">
+          <li>Начинающийся сахарный диабет</li>
+          <li>Избыточный вес</li>
+          <li>Хронический стресс и депрессия</li>
+          <li>Камни в почках</li>          
+      </ul>
+      <p>Но с 2018 года наша жизнь изменилась!  Мы и наши близкие начали принимать клеточное питание Elev8 от компании B-epic, и результаты превзошли все ожидания.  Я, Мурадил, смог похудеть на 26-27 кг, избавиться от сахарного диабета и почувствовать невероятный прилив сил и энергии.  Слава Богу!</p>
+        
+      </div>
+      <div class="img-card result">
+        <img src="ImagesB/мурадил-результат.webp" alt="мурадил elev8">
+      </div>           
+    </div>
+    <div class="about_wrapper">
+      <div class="about-text">
+        <h2><img src="./ImagesB/section-shape.webp" loading="lazy" alt="">Наша миссия</h2>
+        <p>Теперь наша миссия - помогать другим людям обрести здоровье и энергию!  В нашем интернет-магазине вы можете приобрести Elev8 и другие продукты B-epic, которые помогут вам улучшить качество жизни.  Мы рекомендуем Elev8 всем, потому что это клеточное питание XXI века, основанное на растениях-адаптогенах.  Это не лекарство, а средство, которое помогает организму стать сильнее, энергичнее и выносливее.  Elev8 обеспечивает полноценное клеточное питание, укрепляет иммунитет и способствует самовосстановлению организма.</p>
+      </div>
+      <div class="about-text">
+        <h2><img src="./ImagesB/section-shape.webp" loading="lazy" alt="">Присоединяйтесь!</h2>
+        <p>Доверьтесь нашему опыту и начните свой путь к здоровой и активной жизни уже сегодня!  Берегите себя и своих близких ❤️</p>
+      </div>
+  </div>  
+  </section>
+  <footer> 
+    <div class="container">
+        <div class="row">
+            <div class="footer_col">
+                <h4 class="footer_heads"> О компании</h4>
+               
+                <div class="about_us"> <p>B-Epic  помогает людям раскрыть потенциал, создавая баланс в физическом, эмоциональном, социальном и финансовом здоровье для успешной жизни.</p></div>
+            </div>
+            
+            <div class="footer_col">
+                <h4 class="footer_heads"> Контактная информация </h4>
+                <ul class="footer_card">
+                    <li>Есть доставка по всему Кыргызстану
+                    </li>
+                    <a href="tel:+996779550014"><li>+996 779 550 014</li></a>
+                    <a href="tel:+996500490555"><li>+996 500 490 555</li></a>
+                    <li class="mail"><a href="mailto:ainagul060182@gmail.com">ainagul060182@gmail.com</li></a>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h4 class="footer_heads"> Мы в социальных сетях  </h4>
+                <ul class="footer_card">
+                    <a href="https://www.instagram.com/ainagul_toroeva_?igsh=MXNiZjVsZno1cGY2MA=="><li class="social_plat">Instagram</li></a>
+                    <a href="https://www.facebook.com/share/15czH4aAyr/"><li class="social_plat">Facebook</li></a>
+                    <a href="https://www.tiktok.com/@muradilbabaev?_t=ZS-8tpbPBfpZsF&_r=1"><li class="social_plat">Tik Tok</li></a>
+                    <a href="https://t.me/ainagul060182"><li class="social_plat">Telegram</li></a>      
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+  
+</body>
+</html>

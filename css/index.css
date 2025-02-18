@@ -1,0 +1,314 @@
+.services {
+    margin-top: 30px;
+}
+
+.header_burger{
+    display: none;
+}
+.text-focus-in{animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both}
+@keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+
+
+.main-banner {
+    background:
+     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
+     url('../ImagesB/hero-bg-1.jpg');
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 1440/655;
+    padding: 6rem 0 6rem;
+}
+
+.main-banner__wrapper {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    padding: 0 1em;
+}
+
+.main-banner__content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+}
+.above{
+    color: var(--green);
+}
+.main-banner__content h1 {
+    font-size: 64px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: white;
+    line-height: 4rem;
+}
+
+.main-banner__content h3 {
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif;
+    color: #ffffff;
+    
+}
+
+.main-banner__content button {
+    font-size: 16px;
+    padding: 12px 30px;
+    background: var(--green);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+.main-banner__content button img{
+    position: relative;
+    display: inline-block !important;
+    height: 0.9rem;
+}
+.main-banner__content button:hover {
+    transform:scale(1.03);
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    opacity: 1.2;
+}
+
+
+
+.main-banner__social {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.main-banner__social-items{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+ .soc_icon:hover {
+    transform: scale(1.2);
+    transition: all 0.4s ease;
+}
+
+
+.echofy-text-section {
+    position: relative;
+    background: #49AF45;
+    z-index: 1;
+    padding: 12px 0 34px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.echofy-text-section .inner-container {
+    max-width: 1812px;
+    margin: 0 auto;
+}
+
+.echofy-text-section .marquee {
+    position: relative;
+    --duration: 30s;
+    --gap: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    gap:0px;
+}
+
+.echofy-text-section .marquee-block {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    gap: 0;
+    min-width: 87%;
+    -webkit-animation: scroll 60s linear infinite;
+    animation: scroll 60s linear infinite;
+}
+
+.echofy-text-section .marquee-block .content-box {
+    position: relative;
+    margin-right:0px;
+}
+
+.echofy-text-section .marquee-block .content-box:last-child {
+    margin-right:0px;
+}
+
+.echofy-text-section .marquee-block .content-box:last-child::before {
+    display: none;
+}
+.title{
+    display: flex !important;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.echofy-text-section .marquee-block .content-box .title{
+    margin:0;
+}
+
+.echofy-text-section .marquee-block .content-box h6.title {
+    display: inline-block;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+    padding: 0 50px;
+}
+
+.echofy-text-section .marquee-block .content-box h6.title img {
+    position: relative;
+    left: -49px;
+    bottom: -27px;
+}
+
+
+
+  @-webkit-keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-100% - var(--gap)));
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  @keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-100% - var(--gap)));
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px){
+   
+    
+}
+
+@media (max-width:900px){
+    .main-banner__content h1{
+        font-size: 48px;
+        line-height: normal;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .main-banner__content h1{
+        font-size: 24px;
+        text-align: center;
+        line-height: normal;
+    }
+
+    .main-banner__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main-discription{
+        font-size: 24px !important;
+        text-align: center ;
+        line-height: 30px !important;
+        font-weight: 500 !important;
+    }
+    
+    .above{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-banner__content{
+        align-items: center !important;
+    }
+    .main-banner__content h3{
+        font-size: 16px !important;
+        font-weight: 300 !important;
+        text-align: center ;
+    }
+
+    .main-banner__content button {
+        font-size: 18px;
+        padding: 20px 60px;
+        background: var(--green);
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+        border: none;
+    }
+    .main-banner {
+        background:
+         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
+         url('/public/ImagesB/hero-bg-1.jpg');
+        background-size: cover;
+        background-position: center;
+        aspect-ratio: 1440/655;
+        padding: 1rem 0 1rem;
+    }
+    .main-banner__content {
+        gap: 1.5rem;
+    }
+
+    .main-banner__social {
+        display: flex;
+        text-align: center; 
+        justify-content: center;
+    }
+    
+    .main-banner__social-items {
+        padding: 20px;
+        display: flex;
+        flex-direction: row !important;
+    }
+    .soc_icon{
+        width: 24px;
+    }
+
+    .echofy-text-section {
+        padding: 0 0 30px ;
+    
+    }
+    .echofy-text-section .marquee-block .content-box h6.title img {
+        position: relative;
+        left: -49px;
+        bottom: -22px;
+    }
+    .echofy-text-section .marquee-block .content-box h6.title {
+        display: inline-block;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 500;
+        gap: 20px;
+    }
+}
+
+
+
+
+

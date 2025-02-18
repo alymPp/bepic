@@ -1,0 +1,57 @@
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+:root {
+    --font: "Montserrat", serif;
+    --green: #4baf47;
+  }
+
+.section {
+    margin-top: 60px;
+}
+
+.top-banner{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.section-title {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    background-color: transparent;
+}
+
+p,h1,  h2 ,h4{
+    font-family: var(--font);
+    font-weight: 400;
+}
+img {
+    max-width: 100%;
+    height: auto; 
+    display: block;
+}
+@media screen and (max-width: 769px){
+    h1, h2{
+        font-size: 28px !important;
+    }
+}
+
+@media screen and (max-width: 379px){
+    h1, h2{
+        font-size: 28px !important;
+    }
+}
+
+
+
+
