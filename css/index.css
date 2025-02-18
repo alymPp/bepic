@@ -265,7 +265,7 @@
     .main-banner {
         background:
          linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
-         url('/public/ImagesB/hero-bg-1.jpg');
+         url('../ImagesB/hero-bg-1.jpg');
         background-size: cover;
         background-position: center;
         aspect-ratio: 1440/655;
