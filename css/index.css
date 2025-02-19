@@ -36,7 +36,7 @@
 }
 .main-banner__content h1 {
     font-size: 64px;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font);
     font-weight: 600;
     color: white;
     line-height: 4rem;
@@ -45,7 +45,7 @@
 .main-banner__content h3 {
     font-size: 36px;
     font-weight: 400;
-    font-family: 'Gilroy', sans-serif;
+    font-family: var(--font);
     color: #ffffff;
     
 }
