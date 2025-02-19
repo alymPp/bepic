@@ -38,7 +38,7 @@ ul{
 
 .footer_card li {
   margin-bottom: 10px;
-  font-family: 'Gilroy', sans-serif;
+  font-family: var(--font);
   color: #BCBBBB;
   font-size: 14px;
   font-weight: 600;
@@ -47,7 +47,7 @@ ul{
 }
 .footer_card li a {
   margin-bottom: 10px;
-  font-family: 'Gilroy', sans-serif;
+  font-family: var(--font);
   color: #BCBBBB;
   font-size: 14px;
   font-weight: 600;
@@ -71,7 +71,7 @@ ul{
 }
 .social_plat{
   margin-bottom: 10px;
-  font-family: 'Gilroy', sans-serif;
+  font-family: var(--font);
   color: #BCBBBB;
   font-size: 16px !important;
 
