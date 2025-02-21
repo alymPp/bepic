@@ -34,23 +34,3 @@ function closeSidebar(){
 }
 
 updateNavbar(media)
-
-
-// обнавление крутящегося текста 
-
-// function reloadSection() {
-//   fetch(window.location.href) 
-//       .then(response => response.text())
-//       .then(html => {
-//           const tempDiv = document.createElement("div");
-//           tempDiv.innerHTML = html;
-
-//           const newContent = tempDiv.querySelector("#refreshable-section");
-//           if (newContent) {
-//               document.querySelector("#refreshable-section").innerHTML = newContent.innerHTML;
-//           }
-//       })
-//       .catch(error => console.error("Ошибка при обновлении:", error));
-// }
-
-// setInterval(reloadSection, 13900);
