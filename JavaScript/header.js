@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", function() {
+    if (window.location.pathname.endsWith(".html")) {
+      window.history.replaceState(null, "", window.location.pathname.replace(".html", ""));
+    }
+  });
 const openButton = document.getElementById('open-sidebar-button')
 const navbar = document.getElementById('navbar')
 
