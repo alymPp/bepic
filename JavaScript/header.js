@@ -3,6 +3,12 @@ document.addEventListener("DOMContentLoaded", function() {
       window.history.replaceState(null, "", window.location.pathname.replace(".html", ""));
     }
   });
+
+
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+});
+
 const openButton = document.getElementById('open-sidebar-button')
 const navbar = document.getElementById('navbar')
 
