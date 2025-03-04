@@ -16,7 +16,7 @@ body {
 .main-banner {
     background:
      linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
-     url('../ImagesB/hero-bg-1.webp');
+     url('../ImagesB/hero-bg-1.avif');
     background-size: cover;
     background-position: center;
     aspect-ratio: 1440/655;
