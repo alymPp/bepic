@@ -1,3 +1,12 @@
+.main-banner {
+    background:
+     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
+     url('../ImagesB/hero-bg-1.avif');
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 1440/655;
+    padding: 6rem 0 6rem;
+}
 body {
   font-family: var(--font);
 }
@@ -13,15 +22,7 @@ body {
 @keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
 
 
-.main-banner {
-    background:
-     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
-     url('../ImagesB/hero-bg-1.avif');
-    background-size: cover;
-    background-position: center;
-    aspect-ratio: 1440/655;
-    padding: 6rem 0 6rem;
-}
+
 
 .main-banner__wrapper {
     display: grid;
