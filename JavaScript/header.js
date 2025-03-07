@@ -1,8 +1,8 @@
-document.addEventListener("DOMContentLoaded", function() {
-    if (window.location.pathname.endsWith(".html")) {
-      window.history.replaceState(null, "", window.location.pathname.replace(".html", ""));
-    }
-  });
+// document.addEventListener("DOMContentLoaded", function() {
+//     if (window.location.pathname.endsWith(".html")) {
+//       window.history.replaceState(null, "", window.location.pathname.replace(".html", ""));
+//     }
+//   });
 
 
 document.addEventListener('contextmenu', function(event) {
